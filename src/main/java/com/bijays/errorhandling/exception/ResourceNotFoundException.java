@@ -1,14 +1,15 @@
 package com.bijays.errorhandling.exception;
 
-public class ResourceNotFoundException extends Exception {
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
-    private static final long serialVersionUID = 5590299497591013820L;
+@ResponseStatus(HttpStatus.NOT_FOUND)
+public class ResourceNotFoundException extends RuntimeException {
 
-    public ResourceNotFoundException() {
-        super();
-    }
+    private static final long serialVersionUID = 5990299497591013821L;
 
     public ResourceNotFoundException(final String message) {
         super(message);
     }
+
 }

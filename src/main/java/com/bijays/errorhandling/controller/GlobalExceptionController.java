@@ -13,11 +13,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Controller
-public class GlobalExceptionHandler implements ErrorController {
+public class GlobalExceptionController implements ErrorController {
 
    private final ErrorAttributes errorAttributes;
 
-    public GlobalExceptionHandler(ErrorAttributes errorAttributes) {
+    public GlobalExceptionController(ErrorAttributes errorAttributes) {
         this.errorAttributes = errorAttributes;
     }
 

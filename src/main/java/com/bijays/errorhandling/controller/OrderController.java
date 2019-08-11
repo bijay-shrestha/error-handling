@@ -1,6 +1,8 @@
 package com.bijays.errorhandling.controller;
 
+import com.bijays.errorhandling.exception.ContentNotFoundException;
 import com.bijays.errorhandling.exception.OrderServiceException;
+import com.bijays.errorhandling.exception.ResourceNotFoundException;
 import com.bijays.errorhandling.modal.Order;
 import com.bijays.errorhandling.service.OrderService;
 import org.springframework.web.bind.annotation.GetMapping;
