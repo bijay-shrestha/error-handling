@@ -62,10 +62,9 @@ public class DataNotFoundException extends RuntimeException{
             Object... entries) {
         if (entries.length % 2 == 1)
             throw new IllegalArgumentException("Invalid entries");
-        Map map =  IntStream.range(0, entries.length / 2).map(i -> i * 2)
+        return IntStream.range(0, entries.length / 2).map(i -> i * 2)
                 .collect(HashMap::new,
                         (m, i) -> m.put(keyType.cast(entries[i]), valueType.cast(entries[i + 1])),
                         Map::putAll);
-        return map ;
     }
 }
