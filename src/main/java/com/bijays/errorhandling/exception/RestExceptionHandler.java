@@ -31,6 +31,7 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
             ContentNotFoundException ex) {
         ApiError apiError = new ApiError(NOT_FOUND);
         apiError.setMessage(ex.getMessage());
+        apiError.setDebugMessage("Test content not found debugger message.");
         return buildResponseEntity(apiError);
     }
 
