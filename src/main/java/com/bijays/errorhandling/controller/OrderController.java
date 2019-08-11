@@ -45,4 +45,9 @@ public class OrderController {
     public void getExpectationFailedException(){
         throw new OperationUnSuccessfulException(Order.class, "Error! Error! Error!");
     }
+
+    @GetMapping("/order-null")
+    public Order OrderServiceException(){
+        return orderService.getOrderServiceExceptionMessage();
+    }
 }

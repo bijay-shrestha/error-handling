@@ -25,6 +25,12 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         return buildResponseEntity(ex.getException());
     }
 
+    @ExceptionHandler(value = {OrderServiceException.class})
+    public ResponseEntity<Object> handleOrderServiceException(OrderServiceException ex){
+        log.error("------- ORDER SERVICE EXCEPTION -------");
+        return buildResponseEntity(ex.getException());
+    }
+
     private ResponseEntity<Object> buildResponseEntity(ExceptionResponse e) {
         return new ResponseEntity<>(e, e.getStatus());
     }

@@ -37,9 +37,10 @@ public class OrderService {
         return null;
     }
 
-    // throw exception
-    public Order getOrderException() throws OrderServiceException {
-        throw new OrderServiceException();
+    public Order getOrderServiceExceptionMessage() {
+        Order order = getOrderNull();
+        if(order == null)
+            throw new OrderServiceException(Order.class, "Order returned null.");
+        else return new Order();
     }
-
 }
