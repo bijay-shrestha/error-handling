@@ -6,6 +6,13 @@ import java.time.LocalDateTime;
 
 import static org.springframework.http.HttpStatus.EXPECTATION_FAILED;
 
+/**
+ * <p>OperationUnSuccessfulException class.</p>
+ *
+ * @author bijayshrestha
+ * @version $Id: $Id
+ */
+
 @Getter
 public class OperationUnSuccessfulException extends RuntimeException {
 

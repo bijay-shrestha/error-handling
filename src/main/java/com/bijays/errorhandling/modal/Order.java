@@ -7,6 +7,13 @@ import lombok.Setter;
 
 import java.io.Serializable;
 
+/**
+ * <p>Order class.</p>
+ *
+ * @author bijayshrestha
+ * @version $Id: $Id
+ */
+
 @Getter
 @Setter
 @NoArgsConstructor

@@ -8,10 +8,17 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+/**
+ * <p>RestExceptionHandler class.</p>
+ *
+ * @author bijayshrestha
+ * @version $Id: $Id
+ */
+
 @ControllerAdvice
 @Slf4j
 @Order(Ordered.HIGHEST_PRECEDENCE)
-public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
+public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(value = {DataNotFoundException.class})
     public ResponseEntity<Object> handleDataNotFoundException(DataNotFoundException ex){

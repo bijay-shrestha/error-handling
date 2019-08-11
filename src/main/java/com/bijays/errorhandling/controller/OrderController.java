@@ -9,6 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * <p>OrderController class.</p>
+ *
+ * @author bijayshrestha
+ * @version $Id: $Id
+ */
+
 @RestController
 public class OrderController {
     private final OrderService orderService;
@@ -47,7 +54,7 @@ public class OrderController {
     }
 
     @GetMapping("/order-null")
-    public Order OrderServiceException(){
+    public Order OrderServiceException() {
         return orderService.getOrderServiceExceptionMessage();
     }
 }

@@ -8,6 +8,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * <p>OrderService class.</p>
+ *
+ * @author bijayshrestha
+ * @version $Id: $Id
+ */
+
+
 @Service
 public class OrderService {
 

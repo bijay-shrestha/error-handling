@@ -11,6 +11,13 @@ import java.util.stream.IntStream;
 
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 
+/**
+ * <p>DataNotFoundException class.</p>
+ *
+ * @author bijayshrestha
+ * @version $Id: $Id
+ */
+
 @Getter
 @Slf4j
 public class DataNotFoundException extends RuntimeException{

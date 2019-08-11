@@ -7,6 +7,14 @@ import org.springframework.http.HttpStatus;
 
 import java.time.LocalDateTime;
 
+/**
+ * <p>ExceptionResponse class.</p>
+ *
+ * @author bijayshrestha
+ * @version $Id: $Id
+ */
+
+
 @Getter
 @Builder
 class ExceptionResponse {
@@ -15,5 +23,4 @@ class ExceptionResponse {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss")
     private final LocalDateTime timeStamp;
     private final String debugMessage;
-
 }

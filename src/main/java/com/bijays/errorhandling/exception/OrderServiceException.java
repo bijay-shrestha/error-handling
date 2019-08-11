@@ -6,6 +6,13 @@ import java.time.LocalDateTime;
 
 import static org.springframework.http.HttpStatus.BAD_GATEWAY;
 
+/**
+ * <p>OrderServiceException class.</p>
+ *
+ * @author bijayshrestha
+ * @version $Id: $Id
+ */
+
 @Getter
 public class OrderServiceException extends RuntimeException {
 
